@@ -22,6 +22,13 @@ export default function Home({ products, isDarkMode, toggleDarkMode }) {
 
   return (
     <Layout>
+      <input
+        value={phrase}
+        onChange={(e) => setPhrase(e.target.value)}
+        type="text"
+        placeholder="Search for products..."
+        className="bg-yellow-200 w-full py-2 px-4 rounded-xl"
+      />
       <div>
         {categoriesNames.map((categoryName) => (
           <div key={categoryName}>
