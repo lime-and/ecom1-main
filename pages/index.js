@@ -22,16 +22,6 @@ export default function Home({ products, isDarkMode, toggleDarkMode }) {
 
   return (
     <Layout>
-      <button onClick={toggleDarkMode}>
-        {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-      </button>
-      <input
-        value={phrase}
-        onChange={(e) => setPhrase(e.target.value)}
-        type="text"
-        placeholder="Search for products..."
-        className="bg-yellow-200 w-full py-2 px-4 rounded-xl"
-      />
       <div>
         {categoriesNames.map((categoryName) => (
           <div key={categoryName}>
