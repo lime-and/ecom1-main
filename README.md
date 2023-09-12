@@ -10,6 +10,7 @@ preview of website
 
 
 !!!current problems!!!
+
 ・when deploying with vercel the pictures isn't loading properly
 ・Using Stripe as payment isn't working as it doesn't support yen which this project is based on
 
