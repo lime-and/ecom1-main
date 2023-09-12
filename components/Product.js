@@ -11,7 +11,7 @@ export default function Product({_id,name,price,description,picture}) {
     <div className="w-52">
       <div className="bg-white-100 p-5 rounded-xl">
         {/* Apply styles to the img element */}
-        <Image
+        <img
           src={picture}
           alt=""
           style={{
