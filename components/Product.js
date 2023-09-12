@@ -1,5 +1,6 @@
 import {useContext} from "react";
 import {ProductsContext} from "./ProductsContext";
+import Image from 'next/image'
 
 export default function Product({_id,name,price,description,picture}) {
   const {setSelectedProducts} = useContext(ProductsContext);
@@ -10,7 +11,7 @@ export default function Product({_id,name,price,description,picture}) {
     <div className="w-52">
       <div className="bg-white-100 p-5 rounded-xl">
         {/* Apply styles to the img element */}
-        <img
+        <Image
           src={picture}
           alt=""
           style={{
